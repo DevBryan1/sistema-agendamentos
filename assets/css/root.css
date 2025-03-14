@@ -38,7 +38,7 @@ body{
 
 .menu_mobile{
     width: 100%;
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
 }
@@ -140,7 +140,6 @@ ul li{
 
 #quem_somos{
     width: 100%;
-    height: 500px;
     display: flex;
     justify-content: center;
     margin-top: 40px;
@@ -195,6 +194,17 @@ ul li{
     justify-content: center;
     align-items: center;
 }
+.box_onde_encontrar{
+    width: 100%;
+}
+.box_map {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.box_map iframe{
+    width: 80%;
+}
 .box_onde_texto{
     width: 100%;
     height: 150px;
@@ -232,6 +242,7 @@ ul li{
     flex-direction: column;
     justify-content: center;
     color: #fefefe;
+    font-family: 'Montserrat', sans-serif;
 }
 .contato_title{
     display: flex;
@@ -343,13 +354,26 @@ ul li{
         margin-top: -20px;
     }
     .box_map iframe{
-        width: 700px;
+        width: 80%;
     }
     .box_contato{
         width: 80%;
     }
 }
 @media screen and (max-width:768px){
+    .titulo_banner{
+        font-size: 26px;
+    }
+    .subtitulo_banner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    
     .box_quem_somos img{
         width: 280px;
     }
@@ -368,6 +392,9 @@ ul li{
     .menu_cabecalho{
         display: none;
     }    
+    .menu_mobile{
+        display: flex;
+    }
     .menu-toggle{
         display: flex;
     }
@@ -431,5 +458,62 @@ ul li{
         width: 100%;
         padding: 0;
     }
+    .box_map{
+        display: flex;
+        justify-content: center;
+    }
+    .box_map iframe{
+        width: 80%;
+    }
 
+}
+@media screen and (max-width:685px){
+    .onde_texto_title{
+        font-size: 30px;
+    }
+    .onde_texto_subtitle{
+        text-align: center;
+        font-size: 16px;
+    }
+    .contato_title{
+        font-size: 35px;
+    }
+    .item p{
+        font-size: 15px;
+    }
+    .box_quem_somos{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .box_imagem img {
+        width: 100%;
+    }
+    .box_texto{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:430px){
+    .titulo_banner{
+        font-size: 25px;
+    }
+    .onde_texto_title{
+        font-size: 25px;
+        text-align: center;
+    }
+    .onde_texto_subtitle{
+        font-size: 14px;
+    }
+    .contato_title{
+        font-size: 28px;
+    }
+    .item p{
+        font-size: 14px;
+    }
 }

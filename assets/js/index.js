@@ -61,8 +61,8 @@ window.addEventListener("load", function() {
     });
     document.addEventListener("DOMContentLoaded", function () {
         const menuToggle = document.querySelector(".menu-toggle");
-        const menu = document.querySelector(".menu");
-        const menuLinks = document.querySelectorAll(".menu a"); // Seleciona todos os links dentro do menu
+        const menu = document.querySelector("#nav_mobile");
+        const menuLinks = document.querySelectorAll("#nav_mobile a"); // Seleciona todos os links dentro do menu
     
         menuToggle.addEventListener("click", function () {
             menu.classList.toggle("active");
